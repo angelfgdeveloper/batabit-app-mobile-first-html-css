@@ -165,11 +165,18 @@ header img {
 }
 
 .main-currency-table .currency-table--title {
-  color: var(--bitcoin-orange);
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
+}
+
+.main-currency-table:nth-of-type(1) .currency-table--title  {
+  color: var(--bitcoin-orange);
+}
+
+.main-currency-table:nth-of-type(2) .currency-table--title {
+  color: var(--secondary-blue);
 }
 
 .currency-table--container {
@@ -241,14 +248,21 @@ header img {
   width: 15px;
 }
 
-.currency-table--date {
-  background-color: var(--soft-orange);
+.main-currency-table .currency-table--date {
   border-radius: 8px;
   height: 30px;
   /* margin-top: 15px ; */
   margin: 0 auto;
   padding: 8px;
   width: 190px;
+}
+
+.main-currency-table:nth-of-type(1) .currency-table--date {
+  background-color: var(--soft-orange);
+}
+
+.main-currency-table:nth-of-type(2) .currency-table--date {
+  background-color: var(--soft-blue);
 }
 
 .currency-table--date p {
